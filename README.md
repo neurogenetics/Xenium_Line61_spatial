@@ -24,3 +24,7 @@ Folder | Script | Figures
 2_CTX_analysis | 15_ABC_Xenium_comparison | S3a, S3b, S3c
 2_CTX_analysis | 16_ctx_DE_euler_plots | S7a
 2_CTX_analysis | 17_ctx_QC_metrics | S2a, S2b, S2c, S2d
+3_HIP_analysis | 4_hip_basic_plots | 3a, 3b, 3c, 3d
+3_HIP_analysis | 5_hip_pSyn_visualization | 4a, 4b
+3_HIP_analysis | 6_hip_gene_expression_analysis | 4c, 4d
+3_HIP_analysis | 7_hip_QC_metrics | S5a, S5b, S5c, S5d
