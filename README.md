@@ -1,6 +1,6 @@
 # Xenium_Line61_spatial
 
-Code used to analyze data and generate figures for Horan-Portelance et al., 2024, "Single-cell spatial transcriptomics reveals molecular patterns of selective neuronal vulnerability to α-synuclein pathology in a transgenic mouse model of PD/DLB". DOI: 
+Code used to analyze data and generate figures for Horan-Portelance et al., 2024, *Single-cell spatial transcriptomics reveals molecular patterns of selective neuronal vulnerability to α-synuclein pathology in a transgenic mouse model of PD/DLB*. DOI: 
 
 We performed Xenium, an imaging-based spatial transcriptomics assay, in Line 61 mice, a mouse model of α-synucleinopathy. There are 8 total samples, 4 non-transgenic (non-tg or nTg) and 4 transgenic (α-syn-tg or Tg), with 2 males and 2 females in each genotype. We ran Xenium with the base mouse brain panel and a 100-plex custom panel of probes, all of which can be found in Supplementary Table 1 of the paper. 
 
