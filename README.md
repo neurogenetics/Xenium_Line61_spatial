@@ -12,23 +12,15 @@ We also generated a Zenodo repository which holds the images as well as processe
 
 The code in this repository is everything which can analyze the data as well as generate all the figures for the paper, both main and supplementary. A full list of figures and where you can find the code for them is below: 
 
-Figure | Folder | Script
+Folder | Script | Figures
 --- | --- | ---
-Fig. 1a | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 1b | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 1c | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 1d | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 2a | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 2b | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 2c | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 2d | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 2e | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 2f | 2_CTX_analysis | 4_ctx_basic_plots
-Fig. 3a | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 3b | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 3c | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 3d | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 4a | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 4b | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 4c | 3_HIP_analysis | 4_ctx_basic_plots
-Fig. 4d | 3_HIP_analysis | 4_ctx_basic_plots
+2_CTX_analysis | 4_ctx_basic_plots | 1a, 1b, 1c, 1d, 1e, S4a, S4b
+2_CTX_analysis | 5_ctx_pSyn_visualization | 2a, 2b
+2_CTX_analysis | 6_ctx_gene_exp_analysis | 2c, 2d, 2e
+2_CTX_analysis | 7_ctx_gene_expression_linregs | 2f
+2_CTX_analysis | 10_ctx_DE_GLM_visualization | 6b, 6c, 6d, 6e
+2_CTX_analysis | 11_ctx_pSyn_percentiles_analysis | 5a, 5b, S6a
+2_CTX_analysis | 13_ctx_pSyn_percentiles_visualization | 5c
+2_CTX_analysis | 15_ABC_Xenium_comparison | S3a, S3b, S3c
+2_CTX_analysis | 16_ctx_DE_euler_plots | S7a
+2_CTX_analysis | 17_ctx_QC_metrics | S2a, S2b, S2c, S2d
