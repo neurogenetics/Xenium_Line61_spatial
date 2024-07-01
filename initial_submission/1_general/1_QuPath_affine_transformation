@@ -1,0 +1,25 @@
+//Align image in Xenium explorer, download alignment matrix (3x3)
+//Open image in QuPath and run this code, replace the numbers in the matrix w/ those from XE
+//Will prompt to save the transformed image, name and save it, then add to the project
+
+
+import org.locationtech.jts.geom.util.AffineTransformation
+import qupath.lib.gui.dialogs.Dialogs
+import qupath.lib.images.servers.TransformedServerBuilder
+import qupath.lib.roi.GeometryTools
+
+def transform = GeometryTools.convertTransform(
+        new AffineTransformation([-0.0068856, 1.95311681, 143.93539,
+                                  1.95311681, 0.00688563, -1177.0739,
+                                  0, 0, 1] as double[]))
+
+
+def server = getCurrentServer()
+
+def serverTransformed = new TransformedServerBuilder(server)
+        .transform(transform)
+        .build()
+        
+def file = Dialogs.promptToSaveFile("Save transformed image", null, null, "OME-TIFF", "ome.tiff")
+if (file)
+    writeImage(serverTransformed, file.getAbsolutePath())
