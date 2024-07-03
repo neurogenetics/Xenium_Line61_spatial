@@ -318,7 +318,7 @@ fdr_fun4 <- function(j, i, x, y, w, h, fill) {
 # make hmp
 
 ht4 <- Heatmap(mat7, 
-               name = "GLM estimate (x10^-4)", 
+               name = "GLM estimate (x10^4)", 
                col = col_fun2, 
                cluster_rows = F, 
                cluster_columns = F, 
