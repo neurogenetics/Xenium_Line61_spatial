@@ -8,7 +8,7 @@ We also performed post-Xenium immunofluorescence in the same sections used in th
 
 Raw Xenium data from this experiment can be found on GEO: URL
 
-We also generated a Zenodo repository which holds the images as well as processed Seurat objects: URL
+We also generated a Zenodo repository which holds the images as well as processed Seurat objects: [URL](https://doi.org/10.5281/zenodo.12626000)
 
 The code in this repository is everything which can analyze the data as well as generate all the figures for the paper, both main and supplementary. A full list of figures and where you can find the code for them is below: 
 
