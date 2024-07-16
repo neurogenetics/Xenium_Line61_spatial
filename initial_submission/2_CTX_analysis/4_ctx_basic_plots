@@ -236,3 +236,9 @@ svglite("/xenium_Line61_final/ctx/outs/ctx_imagedimplot_zoom_w_axes.svg",
         width = 9, height = 8)
 plot(p7)
 dev.off()
+
+####################################################################################
+
+ctx_ctsbysample <- table(Idents(xenium_ctx), xenium_ctx$orig.ident)
+write.csv(ctx_ctsbysample,
+          file = "/xenium_Line61_final/ctx/outs/ctx_ctsbysample.csv")
