@@ -350,6 +350,15 @@ ht_opt(legend_border = "black",
 col_fun = colorRamp2(c(-1, 0, 1), c("#05409e", "white", "#e64a02"))
 
 
+# function to label cells w/ matching rowname and colname (i.e., matched pairs of cell types)
+
+label_fun <- function(j, i, x, y, width, height, fill) {
+  if (rownames(mat)[i] == colnames(mat)[j]) {
+    grid.text(sprintf("%.3f", mat[i, j]), x, y, gp = gpar(fontsize = 11, col = "black"))
+  }
+}
+
+
 # make data matrix
 
 correlation.df <- readRDS("/xenium_Line61_final/ctx/ABC_comp/correlation_pearson.rds")
@@ -357,7 +366,7 @@ correlation.df <- readRDS("/xenium_Line61_final/ctx/ABC_comp/correlation_pearson
 mat <- data.matrix(correlation.df)
 
 ht1 <- Heatmap(mat, 
-               name = "Pearson correlation", 
+               name = "Pearson R", 
                col = col_fun, 
                cluster_rows = F, 
                cluster_columns = F, 
@@ -372,13 +381,14 @@ ht1 <- Heatmap(mat,
                column_title = "ABC atlas (subclass)",
                column_title_rot = 0,
                column_title_side = "bottom",
-               column_title_gp = gpar(fontface = "bold"))
+               column_title_gp = gpar(fontface = "bold"),
+               cell_fun = label_fun)
 
-png("/xenium_Line61_final/ctx/ABC_comp/outs/pearson_correlation.png", width = 10, height = 6.5, units = "in", res = 600)
+png("/xenium_Line61_final/ctx/ABC_comp/outs/pearson_correlation.png", width = 11.4, height = 6.1, units = "in", res = 600)
 draw(ht1)
 dev.off()
 
-pdf("/xenium_Line61_final/ctx/ABC_comp/outs/pearson_correlation.pdf", width = 10, height = 6.5)
+pdf("/xenium_Line61_final/ctx/ABC_comp/outs/pearson_correlation.pdf", width = 11.4, height = 6.1)
 draw(ht1)
 dev.off()
 
