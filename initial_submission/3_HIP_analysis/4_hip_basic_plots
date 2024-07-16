@@ -108,3 +108,9 @@ svglite("/xenium_Line61_final/hip/outs/hip_dotplot.svg",
         width = 8.5, height = 4.5)
 plot(p4)
 dev.off()
+
+####################################################################################
+
+hip_ctsbysample <- table(Idents(xenium_hip), xenium_hip$orig.ident)
+write.csv(hip_ctsbysample,
+          file = "/xenium_Line61_final/hip/outs/hip_ctsbysample.csv")
